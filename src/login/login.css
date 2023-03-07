@@ -1,0 +1,23 @@
+body {
+  background-color: #EDF1D6;
+}
+
+.login {
+  min-height: 100vh;
+}
+
+.bgImage {
+  background-color: #609966;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}/*# sourceMappingURL=login.css.map */
