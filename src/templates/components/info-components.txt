@@ -1,0 +1,1 @@
+La carpeta "components" suele contener elementos de la interfaz de usuario, como botones, menús, sliders, formularios, entre otros. Estos componentes se utilizan comúnmente en una misma página o sección del sitio web y se diseñan para ser reutilizables dentro de esa misma página o sección.

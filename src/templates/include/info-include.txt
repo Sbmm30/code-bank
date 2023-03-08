@@ -1,0 +1,1 @@
+La carpeta include contiendran archivos de la estructura básica de una página web, como la etiqueta head, la barra de navegación, el pie de página y otros elementos que se repiten en todas las páginas del sitio.

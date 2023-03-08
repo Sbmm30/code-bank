@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +13,7 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
   <!-- Bootstrap CSS v5.2.1 -->
-  <link rel="stylesheet" href="./login.css" />
+  <link rel="stylesheet" href="../../assets/css/login.css" />
 </head>
 
 <body>
@@ -24,7 +25,7 @@
       <div class="row g-0">
         <div class="bgImage col-md-4 col-lg-6 d-none d-md-flex">
           <div>
-            <img src="../assets/img/payment-successful.png" alt="" class="img-fluid">
+            <img src="../../assets/images/payment-successful.png" alt="card" class="img-fluid">
           </div>
         </div>
         <div class="col-md-8 col-lg-6">
@@ -34,7 +35,7 @@
                 <a class="small" href="#">Volver</a>
               </div>
               <div class="col-7 text-end">
-                <span class="small text-secondary" href="#">Esta ventana se cerrara en 234 segundos</span>
+                <span class="small text-secondary" href="#">Esta ventana se cerrara en <span id=txtSeconds></span> segundos</span>
               </div>
             </div>
           </div>
@@ -120,7 +121,7 @@
     </div>
   </main>
   <footer>
-    <!-- place footer here -->
+  <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -130,6 +131,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
     crossorigin="anonymous"></script>
+
+  <script src="../../assets/js/timer.js"></script>
 </body>
 
 </html>
