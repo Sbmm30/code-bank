@@ -50,14 +50,12 @@
 
                     <div class="form-floating mb-3">
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                          value="">
-                        <label class="form-check-label" for="inlineRadio1">Persona</label>
+                        <input class="form-check-input" type="radio" name="option" id="txtPerson" value="" onchange="typeUser(this)">
+                        <label class="form-check-label" for="txtPerson">Persona</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                          value="">
-                        <label class="form-check-label" for="inlineRadio2">Empresa</label>
+                        <input class="form-check-input" type="radio" name="option" id="txtCompany" value="4912" onchange="typeUser(this)">
+                        <label class="form-check-label" for="txtCompany">Empresa</label>
                       </div>
                     </div>
 
@@ -74,8 +72,8 @@
                     </div>
 
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
-                      <label for="floatingPassword">Número de tarjeta</label>
+                      <input type="text" class="form-control" id="txtNum-card" placeholder="No-card" required>
+                      <label for="txtNum-card">Número de tarjeta</label>
                     </div>
 
                     <div class="form-check mb-3">
@@ -133,6 +131,8 @@
     crossorigin="anonymous"></script>
 
   <script src="../../assets/js/timer.js"></script>
+  <script src="../../assets/js/userCard.js"></script>
+  <script src="../../assets/js/numberSeparator.js"></script>
 </body>
 
 </html>
