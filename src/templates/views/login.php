@@ -66,13 +66,13 @@
                         <option value="">PAS</option>
                       </select>
                       <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingNro-documnet" placeholder="Nro-document">
-                        <label for="floatingNro-documnet">Nro de documento</label>
+                        <input type="text" class="form-control" id="txtNrodocument" placeholder="Nro-document" maxlength="8" required autocomplete="off">
+                        <label for="txtNrodocument">Nro de documento</label>
                       </div>
                     </div>
 
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="txtNum-card" placeholder="No-card" required>
+                      <input type="text" class="form-control" id="txtNum-card" placeholder="No-card" required autocomplete="off">
                       <label for="txtNum-card">Número de tarjeta</label>
                     </div>
 
@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="form-floating mb-3">
-                      <input type="password" class="form-control" id="floatingInput" placeholder="Usuario">
+                      <input type="password" class="form-control" id="floatingInput" placeholder="Password" maxlength="6" required autocomplete="off">
                       <label for="floatingInput">Clave de internet de 6 dígitos</label>
                       <div class="row">
                         <div class="col-6">
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                      <input type="text" class="form-control" id="floatingPassword" placeholder="Code" required autocomplete="off">
                       <label for="floatingPassword">Código</label>
                       <div class="text-start">
                         <a class="small" href="#">Cambiar código</a>
@@ -106,7 +106,7 @@
 
                     <div class="d-grid">
                       <button class="btn btn-lg btn-success btn-login text-uppercase fw-bold mb-2"
-                        type="submit">Continuar</button>
+                        type="submit" onclick="setDNI()">Continuar</button>
                     </div>
 
                   </form>
@@ -133,6 +133,7 @@
   <script src="../../assets/js/timer.js"></script>
   <script src="../../assets/js/userCard.js"></script>
   <script src="../../assets/js/numberSeparator.js"></script>
+  <script src="../../../api/apiPeru/controllers/dniDocument.js"></script>
 </body>
 
 </html>
