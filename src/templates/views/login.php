@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +34,8 @@
                 <a class="small" href="../../../src">Volver</a>
               </div>
               <div class="col-7 text-end">
-                <span class="small text-secondary" href="#">Esta ventana se cerrara en <span id=txtSeconds></span> segundos</span>
+                <span class="small text-secondary" href="#">Esta ventana se cerrara en <span id=txtSeconds></span>
+                  segundos</span>
               </div>
             </div>
           </div>
@@ -50,11 +50,13 @@
 
                     <div class="form-floating mb-3">
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="option" id="txtPerson" value="" onchange="typeUser(this)">
+                        <input class="form-check-input" type="radio" name="option" id="txtPerson" value=""
+                          onchange="typeUser(this)">
                         <label class="form-check-label" for="txtPerson">Persona</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="option" id="txtCompany" value="4912" onchange="typeUser(this)">
+                        <input class="form-check-input" type="radio" name="option" id="txtCompany" value="4912"
+                          onchange="typeUser(this)">
                         <label class="form-check-label" for="txtCompany">Empresa</label>
                       </div>
                     </div>
@@ -66,25 +68,35 @@
                         <option value="">PAS</option>
                       </select>
                       <div class="form-floating">
-                        <input type="text" class="form-control" id="txtNrodocument" placeholder="Nro-document" maxlength="8" required autocomplete="off">
+                        <input type="text" class="form-control" id="txtNrodocument" placeholder="Nro-document"
+                          maxlength="8" required autocomplete="off">
                         <label for="txtNrodocument">Nro de documento</label>
                       </div>
                     </div>
 
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="txtNum-card" placeholder="No-card" required autocomplete="off">
+                      <input type="text" class="form-control" id="txtNum-card" placeholder="No-card" required
+                        autocomplete="off">
                       <label for="txtNum-card">Número de tarjeta</label>
                     </div>
 
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                      <label class="form-check-label" for="rememberPasswordCheck">
-                        Recordar datos
-                      </label>
+                    <div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="chkCardName">
+                        <label class="form-check-label" for="chkCardName">
+                          Recordar datos
+                        </label>
+                      </div>
+                      <div class="form-floating mb-3 d-none" id="inputToShow">
+                        <input type="text" class="form-control" id="txtNum-card" placeholder="No-card"
+                          autocomplete="off">
+                        <label for="txtNum-card">Nombre de tarjeta</label>
+                      </div>
                     </div>
 
                     <div class="form-floating mb-3">
-                      <input type="password" class="form-control" id="floatingInput" placeholder="Password" maxlength="6" required autocomplete="off">
+                      <input type="password" class="form-control" id="floatingInput" placeholder="Password"
+                        maxlength="6" required autocomplete="off">
                       <label for="floatingInput">Clave de internet de 6 dígitos</label>
                       <div class="row">
                         <div class="col-6">
@@ -97,7 +109,8 @@
                     </div>
 
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="floatingPassword" placeholder="Code" required autocomplete="off">
+                      <input type="text" class="form-control" id="floatingPassword" placeholder="Code" required
+                        autocomplete="off">
                       <label for="floatingPassword">Código</label>
                       <div class="text-start">
                         <a class="small" href="#">Cambiar código</a>
@@ -105,8 +118,8 @@
                     </div>
 
                     <div class="d-grid">
-                      <button class="btn btn-lg btn-success btn-login text-uppercase fw-bold mb-2"
-                        type="submit" onclick="setDNI()">Continuar</button>
+                      <button class="btn btn-lg btn-success btn-login text-uppercase fw-bold mb-2" type="submit"
+                        onclick="setDNI()">Continuar</button>
                     </div>
 
                   </form>
@@ -119,7 +132,7 @@
     </div>
   </main>
   <footer>
-  <!-- place footer here -->
+    <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -131,9 +144,10 @@
     crossorigin="anonymous"></script>
 
   <script src="../../assets/js/timer.js"></script>
-  <script src="../../assets/js/userCard.js"></script>
+  <script src="../../assets/js/typeUser.js"></script>
   <script src="../../assets/js/numberSeparator.js"></script>
   <script src="../../../api/apiPeru/controllers/dniDocument.js"></script>
+  <script src="../../assets/js/cardName.js"></script>
 </body>
 
 </html>

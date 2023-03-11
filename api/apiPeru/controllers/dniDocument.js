@@ -15,10 +15,12 @@ function setDNI() {
           // resultElement.textContent = `Nombre: ${fullName}`;
           console.log(`Nombre: ${fullName}`);
         } else {
-          resultElement.textContent = `Error: ${data.message}`;
+          //resultElement.textContent = `Error: ${data.message}`;
+          console.log(`Error: ${data.message}`);
         }
       })
       .catch((error) => {
-        resultElement.textContent = `Error: ${error}`;
+        //resultElement.textContent = `Error: ${error}`;
+        console.log(`Error: ${error}`);
       });
   }
